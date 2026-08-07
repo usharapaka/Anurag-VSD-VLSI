@@ -98,10 +98,9 @@ gtkwave tb_good_mux.vcd
 The generated waveform is opened using GTKWave for verification.
 
 ---
+GTKWave Output
 
-## GTKWave Output
-
-<img width="1907" height="1193" alt="Screenshot 2026-08-06 164012" src="https://github.com/user-attachments/assets/4d8f9c2f-9728-40ae-8479-453bc0e56207" />
+<img width="1913" height="1193" alt="Screenshot 2026-08-06 203754" src="https://github.com/user-attachments/assets/3bc7bf8b-a318-479c-8340-4fa626f98754" />
 
 
 # 4️⃣ Multiplexer Design Explanation
