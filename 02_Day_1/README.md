@@ -161,4 +161,4 @@ endmodule
 
 # ✅ Conclusion
 
-In this experiment, I learned the basic RTL design flow using Verilog HDL. I understood the purpose of a design module, testbench, simulator, waveform analysis, and RTL synthesis. The 2:1 Multiplexer was successfully compiled, simulated, and synthesized using open-source EDA tools, providing a strong foundation for further VLSI design experiments.
+This experiment provided practical experience in the Verilog RTL design process. It covered the complete simulation workflow, including writing the design module and testbench, compiling the files using Icarus Verilog, and verifying the output with GTKWave. The successful implementation of the 2:1 Multiplexer strengthened my understanding of digital design concepts and enhanced my confidence in working with RTL simulation and waveform analysis.
