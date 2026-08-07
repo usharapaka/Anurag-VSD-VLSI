@@ -16,20 +16,19 @@ This repository documents my learning journey and hands-on experiments completed
 
 ---
 
-### 📁 02_Day_1 – Verilog RTL Design Through Simulation
+## 02_Day_1 – Verilog RTL Design Through Simulation & Yosys Synthesis
+
 **Topics Covered:**
-- Workshop Overview
-- Introduction to Digital Design
-- RTL Design Flow
-- Digital Design Verification
-- Icarus Verilog Simulator
-- Verilog Design
-- Testbench
-- Simulation Workflow
-- GTKWave Waveform Analysis
-- 2:1 Multiplexer Design
-- Practical Exercise
-- Results and Conclusion
+
+* Workshop Overview
+* Digital Design & RTL Design Flow
+* Verilog Design and Testbench
+* Icarus Verilog & GTKWave
+* 2:1 Multiplexer Design
+* Yosys, Gate Libraries & RTL Synthesis
+* Technology Mapping & Gate-Level Netlist
+* Practical Exercise, Results & Conclusion
+
 
 ➡️ **Documentation:** [Day 1 README](02_Day_1/README.md)
 
