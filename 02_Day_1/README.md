@@ -99,6 +99,11 @@ The generated waveform is opened using GTKWave for verification.
 
 ---
 
+## GTKWave Output
+
+<img width="1907" height="1193" alt="Screenshot 2026-08-06 164012" src="https://github.com/user-attachments/assets/4d8f9c2f-9728-40ae-8479-453bc0e56207" />
+
+
 # 4️⃣ Multiplexer Design Explanation
 
 ## Verilog Design
