@@ -16,7 +16,7 @@ The objective of this experiment is to understand the fundamentals of Register T
 
 ---
 
-# 1️⃣ Digital Design Verification
+# 1️ Digital Design Verification
 
 ## Simulator
 
@@ -34,7 +34,7 @@ A testbench is a verification module that applies different input combinations t
 
 ---
 
-# 2️⃣ Simulation Workflow with Icarus Verilog
+# 2️ Simulation Workflow with Icarus Verilog
 
 Icarus Verilog (iverilog) is an open-source Verilog compiler and simulator. It compiles the design and testbench, executes the simulation, and generates a Value Change Dump (.vcd) file which can be viewed using GTKWave.
 
@@ -60,7 +60,7 @@ GTKWave
 
 ---
 
-# 3️⃣ Practical Exercise – Simulating a 2:1 Multiplexer
+# 3️ Practical Exercise – Simulating a 2:1 Multiplexer
 
 ## Step 1 – Install Required Tools
 
@@ -107,7 +107,7 @@ The generated waveform is opened using GTKWave for verification.
 <img width="1913" height="1193" alt="Screenshot 2026-08-06 203754" src="https://github.com/user-attachments/assets/3bc7bf8b-a318-479c-8340-4fa626f98754" />
 
 
-# 4️⃣ Multiplexer Design Explanation
+# 4️ Multiplexer Design Explanation
 
 ## Verilog Design
 
@@ -152,17 +152,68 @@ endmodule
 
 <img width="1913" height="1195" alt="Screenshot 2026-08-06 214101" src="https://github.com/user-attachments/assets/e1de5ced-1ded-4dc0-b03e-c067a1f5e98a" />
 
+## 5 Introduction to Yosys & Gate Libraries
 
+### Theory
 
+Yosys is an open-source synthesis tool used to convert Verilog HDL code into a gate-level netlist. It optimizes the design and maps it to the standard cells available in a technology library.
 
-#  Results
+A Liberty (`.lib`) file contains information about standard cells such as AND, OR, and NOT gates, including their timing, power, area, and drive strength. During synthesis, Yosys selects the most suitable gate for the given design.
 
-- Successfully compiled the Verilog design using Icarus Verilog.
-- Executed the simulation without errors.
-- Generated the waveform (.vcd) file.
-- Verified the waveform using GTKWave. 
+In this experiment, the `good_mux` Verilog design was synthesized using the Sky130 standard cell library. The design was optimized, technology mapped, and the gate-level schematic was generated using Yosys.
+
+## Synthesis Lab with Yosys
+
+### Step 1: Start Yosys
+
+```bash
+yosys
+```
+
+### Step 2: Read the Liberty Library
+
+```bash
+read_liberty -lib /home/vsduser/VLSI/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+
+### Step 3: Read the Verilog File
+
+```bash
+read_verilog /home/vsduser/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files/good_mux.v
+```
+
+### Step 4: Synthesize the Design
+
+```bash
+synth -top good_mux
+```
+
+### Step 5: Perform Technology Mapping
+
+```bash
+abc -liberty /home/vsduser/VLSI/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+
+### Step 6: View the Gate-Level Netlist
+
+```bash
+show
+```
+<img width="1917" height="1192" alt="Screenshot 2026-08-06 225340" src="https://github.com/user-attachments/assets/0070e49a-f6a6-413d-bf24-58669fb34532" />
+
+## Result
+
+* Successfully compiled the Verilog design using Icarus Verilog.
+* Executed the simulation without errors.
+* Generated the waveform (`.vcd`) file.
+* Verified the waveform using GTKWave.
+* Successfully loaded the Sky130 Liberty library in Yosys.
+* Synthesized the `good_mux` Verilog design without errors.
+* Performed technology mapping using the Sky130 standard cell library.
+* Generated and viewed the gate-level netlist successfully.
+
 ---
 
-#  Conclusion
+## Conclusion
 
-This experiment provided practical experience in the Verilog RTL design process. It covered the complete simulation workflow, including writing the design module and testbench, compiling the files using Icarus Verilog, and verifying the output with GTKWave. The successful implementation of the 2:1 Multiplexer strengthened my understanding of digital design concepts and enhanced my confidence in working with RTL simulation and waveform analysis.
+This experiment provided practical experience in both Verilog RTL simulation and synthesis. It covered the complete design flow, including writing the design module and testbench, compiling and simulating the design using Icarus Verilog, verifying the output with GTKWave, and synthesizing the design using Yosys with the Sky130 standard cell library. The successful implementation and synthesis of the 2:1 Multiplexer strengthened my understanding of digital design concepts, RTL simulation, technology mapping, and gate-level netlist generation in the VLSI design flow.
