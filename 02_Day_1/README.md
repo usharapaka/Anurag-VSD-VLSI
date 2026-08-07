@@ -157,9 +157,7 @@ endmodule
 - Executed the simulation without errors.
 - Generated the waveform (.vcd) file.
 - Verified the waveform using GTKWave.
-
-> **Note:** Add your own screenshots of the terminal, GTKWave output, and synthesis results below this section.
-
+- 
 ---
 
 # ✅ Conclusion
