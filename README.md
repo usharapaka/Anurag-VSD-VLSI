@@ -1,4 +1,4 @@
-# RTL Design Workshop
+# RTL Design And Synthesis Workshop
 
 This repository documents my learning journey and hands-on experiments completed during the RTL Design Workshop. It contains module-wise documentation, practical exercises, simulation results, waveform analysis, and Verilog RTL design implementations.
 
