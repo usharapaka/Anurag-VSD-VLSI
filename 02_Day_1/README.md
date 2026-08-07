@@ -149,20 +149,7 @@ endmodule
 <img width="1913" height="1195" alt="Screenshot 2026-08-06 214101" src="https://github.com/user-attachments/assets/e1de5ced-1ded-4dc0-b03e-c067a1f5e98a" />
 
 
-# 🖥️ RTL Synthesis Using Yosys (Workshop)
 
-The following commands were executed during the RTL synthesis workshop.
-
-```tcl
-yosys
-read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-read_verilog good_mux.v
-synth -top good_mux
-abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-show
-```
-
----
 
 # 📸 Results
 
@@ -170,7 +157,6 @@ show
 - Executed the simulation without errors.
 - Generated the waveform (.vcd) file.
 - Verified the waveform using GTKWave.
-- Performed RTL synthesis using Yosys and the SKY130 standard cell library.
 
 > **Note:** Add your own screenshots of the terminal, GTKWave output, and synthesis results below this section.
 
