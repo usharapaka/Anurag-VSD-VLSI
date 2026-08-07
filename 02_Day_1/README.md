@@ -1,12 +1,12 @@
 # Day 1 – Verilog RTL Design Through Simulation
 
-## 🎯 Experiment Objective
+##  Experiment Objective
 
 The objective of this experiment is to understand the fundamentals of Register Transfer Level (RTL) design using Verilog HDL. The experiment focuses on learning how to compile and simulate Verilog designs using Icarus Verilog (iverilog) and verify the output through waveform analysis using GTKWave. A 2:1 Multiplexer is implemented to understand the complete simulation flow.
 
 ---
 
-# 📚 Contents
+#  Contents
 
 - Digital Design Verification
 - Simulation Workflow with Icarus Verilog
@@ -151,7 +151,7 @@ endmodule
 
 
 
-# 📸 Results
+#  Results
 
 - Successfully compiled the Verilog design using Icarus Verilog.
 - Executed the simulation without errors.
@@ -159,6 +159,6 @@ endmodule
 - Verified the waveform using GTKWave. 
 ---
 
-# ✅ Conclusion
+#  Conclusion
 
 This experiment provided practical experience in the Verilog RTL design process. It covered the complete simulation workflow, including writing the design module and testbench, compiling the files using Icarus Verilog, and verifying the output with GTKWave. The successful implementation of the 2:1 Multiplexer strengthened my understanding of digital design concepts and enhanced my confidence in working with RTL simulation and waveform analysis.
