@@ -6,7 +6,7 @@ The objective of this experiment is to understand the fundamentals of Register T
 
 ---
 
-#  Contents
+##  Contents
 
 - Digital Design Verification
 - Simulation Workflow with Icarus Verilog
