@@ -1,8 +1,33 @@
 # Anurag-VSD-VLSI
 
-VSD RTL Design and Synthesis Workshop
+## VSD RTL Design and Synthesis Workshop
 
-## Contents
+This repository contains my learning journey and hands-on experiments completed during the VSD RTL Design and Synthesis Workshop.
 
-- 📁 01_Module-0
-- 📁 02_Day_1
+## Repository Contents
+
+### 📁 01_Module-0 – Workshop Introduction
+**Topics Covered:**
+- Workshop Overview
+- Introduction to Digital Design
+- RTL Design Flow
+- Required Software Installation
+- Course Objectives
+
+### 📁 02_Day_1 – Verilog RTL Design Through Simulation
+**Topics Covered:**
+- Digital Design Verification
+- Icarus Verilog Simulator
+- Verilog Design
+- Testbench
+- Simulation Workflow
+- GTKWave Waveform Analysis
+- 2:1 Multiplexer Design
+- Practical Exercise
+- Results and Conclusion
+
+---
+
+**Author:** Rapaka Usha  
+**College:** Anurag University  
+**Branch:** Electronics and Communication Engineering (ECE)
