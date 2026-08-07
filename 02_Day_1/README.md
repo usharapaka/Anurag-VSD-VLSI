@@ -152,7 +152,7 @@ endmodule
 
 <img width="1913" height="1195" alt="Screenshot 2026-08-06 214101" src="https://github.com/user-attachments/assets/e1de5ced-1ded-4dc0-b03e-c067a1f5e98a" />
 
-## 5 Introduction to Yosys & Gate Libraries
+# 5 Introduction to Yosys & Gate Libraries
 
 ### Theory
 
