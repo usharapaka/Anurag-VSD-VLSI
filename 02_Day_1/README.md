@@ -156,8 +156,7 @@ endmodule
 - Successfully compiled the Verilog design using Icarus Verilog.
 - Executed the simulation without errors.
 - Generated the waveform (.vcd) file.
-- Verified the waveform using GTKWave.
-- 
+- Verified the waveform using GTKWave. 
 ---
 
 # ✅ Conclusion
