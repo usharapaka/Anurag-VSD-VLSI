@@ -37,7 +37,7 @@ This repository documents my learning journey and hands-on experiments completed
 
 ## Tools Used
 
-- Verilog HDL
+- Verilog 
 - Icarus Verilog (iverilog)
 - GTKWave
 - Git
