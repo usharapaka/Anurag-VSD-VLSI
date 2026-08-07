@@ -30,6 +30,8 @@ A design is the Verilog module that describes the logic and behavior of a digita
 
 A testbench is a verification module that applies different input combinations to the design and checks whether the output is correct.
 
+<img width="1256" height="602" alt="Screenshot 2026-08-07 094739" src="https://github.com/user-attachments/assets/81273a48-22c7-4ebe-a665-abd79845b6e8" />
+
 ---
 
 # 2️⃣ Simulation Workflow with Icarus Verilog
@@ -53,6 +55,8 @@ Generate .vcd File
       ▼
 GTKWave
 ```
+# Simulation Flow Diagram
+<img width="1362" height="700" alt="Screenshot 2026-08-07 094821" src="https://github.com/user-attachments/assets/345854c0-c1b8-4504-b105-b84016da8469" />
 
 ---
 
