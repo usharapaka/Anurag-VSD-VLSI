@@ -144,6 +144,10 @@ endmodule
 - When **sel = 1**, the output follows **i1**.
 
 ---
+# Verilog Code Screenshot
+
+<img width="1913" height="1195" alt="Screenshot 2026-08-06 214101" src="https://github.com/user-attachments/assets/e1de5ced-1ded-4dc0-b03e-c067a1f5e98a" />
+
 
 # 🖥️ RTL Synthesis Using Yosys (Workshop)
 
