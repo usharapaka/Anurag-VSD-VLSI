@@ -1,8 +1,7 @@
-# Anurag-VSD-VLSI
 
-## VSD RTL Design and Synthesis Workshop
+## RTL Design Workshop
 
-This repository contains my learning journey and hands-on experiments completed during the VSD RTL Design and Synthesis Workshop.
+This repository contains my learning journey and hands-on experiments completed during the  RTL Design Workshop.
 
 ## Repository Contents
 
