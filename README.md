@@ -6,17 +6,16 @@ This repository contains my learning journey and hands-on experiments completed 
 
 ## Repository Contents
 
-### 📁 01_Module-0 – Workshop Introduction
+### 📁 [01_Module-0 – Workshop Introduction](./01_Module-0/README.md)
 **Topics Covered:**
+- Introduction and Cloud Lab Instructions
+- Local Lab Installation
 
-
-### 📁 02_Day_1 – Verilog RTL Design Through Simulation
+### 📁 [02_Day_1 – Verilog RTL Design Through Simulation](./02_Day_1/README.md)
 **Topics Covered:**
 - Workshop Overview
 - Introduction to Digital Design
 - RTL Design Flow
-- Required Software Installation
-- Course Objectives
 - Digital Design Verification
 - Icarus Verilog Simulator
 - Verilog Design
