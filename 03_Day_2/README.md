@@ -38,8 +38,7 @@ sudo apt install gedit
 gedit sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
 
-<img width="952" height="1308" alt="WhatsApp Image 2026-08-08 at 6 39 34 PM" src="https://github.com/user-attachments/assets/7c7cca87-1250-445d-9984-aa4f061c01ae" />
-
+<img width="952" height="1144" alt="image" src="https://github.com/user-attachments/assets/079dd3a6-0401-4a4a-a3ed-0e5a75905ff1" />
 
 **Figure 1: SKY130 timing library file.**
 
@@ -73,8 +72,7 @@ The Yosys command used for flattening is:
 flatten
 ```
 ## Example:
-<img width="1104" height="1160" alt="WhatsApp Image 2026-08-08 at 6 45 14 PM" src="https://github.com/user-attachments/assets/52542026-b565-44ba-8c5e-033c708faf3e" />
-
+<img width="1100" height="1068" alt="image" src="https://github.com/user-attachments/assets/c42b5acb-f133-40cc-8129-bd230909f7aa" />
 
 ## 2.3 Comparison
 
