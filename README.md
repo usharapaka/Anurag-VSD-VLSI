@@ -13,7 +13,7 @@ This repository documents my learning journey and hands-on experiments completed
 - Introduction and Cloud Lab Instructions
 - Local Lab Installation
 
-➡️ **Documentation:** [Module 0 README](01_Module-0/README.md)
+➡️ **Documentation:** [Module-0 README](Module-0/README.md)
 
 ---
 
@@ -30,7 +30,7 @@ This repository documents my learning journey and hands-on experiments completed
 - Technology Mapping & Gate-Level Netlist
 - Practical Exercise, Results & Conclusion
 
-➡️ **Documentation:** [Module_1 README](02_Day_1/README.md)
+➡️ **Documentation:** [Module-1 README](Module-1/README.md)
 
 ---
 
@@ -47,7 +47,7 @@ This repository documents my learning journey and hands-on experiments completed
 - Gate-Level Netlist
 - Technology Mapping
 
-➡️ **Documentation:** [Module 2 README](03_Module-2/README.md)
+➡️ **Documentation:** [Module-2 README](Module-2/README.md)
 
 ---
 
@@ -62,7 +62,7 @@ This repository documents my learning journey and hands-on experiments completed
 - SKY130 Technology Mapping
 - Interesting Optimization – Part 1
 
-➡️ **Documentation:** [Module 3 README](04_Module-3/README.md)
+➡️ **Documentation:** [Module-3 README](Module-3/README.md)
 
 ---
 
