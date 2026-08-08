@@ -1,0 +1,341 @@
+# Day 2: Various Flip-Flop Coding Styles and Interesting Optimization – Part 1
+
+## Objectives
+
+The objective of this experiment is to study different flip-flop coding styles, understand their synthesis and optimization, and observe how Yosys optimizes RTL designs and generates the corresponding hardware representation.
+
+---
+
+# 1. Various Flip-Flop Coding Styles and Optimization
+
+Flip-flops are sequential circuits used to store binary information. Different coding styles can be used depending on the reset or set behavior required in the design.
+
+The coding styles studied in this experiment include asynchronous reset, asynchronous set, and synchronous reset.
+
+---
+
+## 1.1 Asynchronous Reset D Flip-Flop
+
+An asynchronous reset changes the output immediately when the reset signal becomes active, without waiting for the clock.
+
+### Verilog Code
+
+```verilog
+module dff_asyncres (input clk, input async_reset, input d, output reg q);
+  always @ (posedge clk, posedge async_reset)
+    if (async_reset)
+      q <= 1'b0;
+    else
+      q <= d;
+endmodule
+```
+
+### Working
+
+When `async_reset` is active, the output `q` is immediately set to `0`. When the reset is inactive, the input `d` is transferred to `q` at the rising edge of the clock.
+
+### Simulation Commands
+
+```bash
+iverilog dff_asyncres.v tb_dff_asyncres.v
+```
+
+```bash
+./a.out
+```
+
+```bash
+gtkwave tb_dff_asyncres.vcd
+```
+
+### Result
+
+The asynchronous-reset D flip-flop was successfully simulated. The waveform shows the behavior of the clock, reset, input data, and output.
+
+### Screenshot
+
+![Asynchronous Reset D Flip-Flop Waveform](dff_asyncres_waveform.png)
+
+**Figure 1: Simulation waveform of the asynchronous-reset D flip-flop.**
+
+---
+
+## 1.2 Asynchronous Set D Flip-Flop
+
+An asynchronous set forces the output to logic `1` when the set signal becomes active, without waiting for a clock edge.
+
+### Verilog Code
+
+```verilog
+module dff_async_set (input clk, input async_set, input d, output reg q);
+  always @ (posedge clk, posedge async_set)
+    if (async_set)
+      q <= 1'b1;
+    else
+      q <= d;
+endmodule
+```
+
+### Working
+
+When `async_set` is active, `q` becomes `1`. When the set signal is inactive, the input `d` is captured at the rising edge of the clock.
+
+### Result
+
+The asynchronous-set D flip-flop coding style was studied and its operation was understood.
+
+---
+
+## 1.3 Synchronous Reset D Flip-Flop
+
+A synchronous reset affects the output only at the active edge of the clock.
+
+### Verilog Code
+
+```verilog
+module dff_syncres (input clk, input async_reset, input sync_reset, input d, output reg q);
+  always @ (posedge clk)
+    if (sync_reset)
+      q <= 1'b0;
+    else
+      q <= d;
+endmodule
+```
+
+### Working
+
+When `sync_reset` is active at the rising edge of the clock, the output `q` becomes `0`. Otherwise, the input `d` is transferred to the output.
+
+### Result
+
+The synchronous-reset D flip-flop was successfully simulated and its waveform behavior was observed.
+
+### Screenshot
+
+![Synchronous Reset D Flip-Flop Waveform](dff_syncres_waveform.png)
+
+**Figure 2: Simulation waveform of the synchronous-reset D flip-flop.**
+
+---
+
+## 1.4 Flip-Flop Synthesis
+
+After simulation, the RTL design was synthesized using Yosys. The SKY130 standard-cell library was used during the technology-mapping process.
+
+### Yosys Commands
+
+```bash
+yosys
+```
+
+```bash
+read_liberty -lib /address/to/your/sky130/file/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+
+```bash
+read_verilog /path/to/dff_asyncres.v
+```
+
+```bash
+synth -top dff_asyncres
+```
+
+```bash
+dfflibmap -liberty /address/to/your/sky130/file/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+
+```bash
+abc -liberty /address/to/your/sky130/file/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+
+```bash
+show
+```
+
+### Result
+
+The flip-flop RTL design was successfully synthesized and mapped to cells from the SKY130 standard-cell library. The synthesized gate-level representation was viewed using Yosys.
+
+### Screenshot
+
+![Flip-Flop Synthesized Netlist](dff_netlist.png)
+
+**Figure 3: Synthesized gate-level representation of the flip-flop design.**
+
+---
+
+# 2. Interesting Optimization – Part 1
+
+RTL synthesis tools optimize the hardware representation of a design while preserving its required functionality. Yosys can simplify arithmetic operations and generate an optimized synthesized representation.
+
+This section demonstrates optimization using multiplication operations.
+
+---
+
+## 2.1 `mul2` Optimization
+
+The following RTL performs multiplication of the input by a constant value.
+
+### Verilog Code
+
+```verilog
+module mul2 (input [2:0] a, output [3:0] y);
+    assign y = a * 2;
+endmodule
+```
+
+The input `a` is multiplied by `2`, and the result is assigned to `y`.
+
+### Yosys Commands
+
+```bash
+yosys
+```
+
+```bash
+read_verilog mul2.v
+```
+
+```bash
+prep -top mul2
+```
+
+```bash
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+
+```bash
+show
+```
+
+```bash
+write_verilog -noattr mul2_net.v
+```
+
+```bash
+gvim mul2_net.v
+```
+
+### Result
+
+The `mul2` design was synthesized successfully. Yosys optimized the multiplication operation and generated the synthesized Verilog netlist.
+
+### Screenshot
+
+![mul2 Optimization](mul2_optimization.png)
+
+**Figure 4: Yosys synthesis and optimization result for `mul2`.**
+
+---
+
+## 2.2 `mult8` Optimization
+
+Another multiplication example was used to observe the optimization performed during synthesis.
+
+### Verilog Code
+
+```verilog
+module mult8 (input [2:0] a, output [5:0] y);
+    assign y = a * 9;
+endmodule
+```
+
+The input is multiplied by the specified constant and the result is assigned to the output.
+
+### Yosys Commands
+
+```bash
+yosys
+```
+
+```bash
+read_verilog mult8.v
+```
+
+```bash
+prep -top mult8
+```
+
+```bash
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+
+```bash
+show
+```
+
+```bash
+write_verilog -noattr mult8_net.v
+```
+
+```bash
+gvim mult8_net.v
+```
+
+### Result
+
+The `mult8` design was synthesized and optimized successfully. The generated netlist represents the optimized hardware obtained from the RTL description.
+
+### Screenshot
+
+![mult8 Optimization](mult8_optimization.png)
+
+**Figure 5: Yosys synthesis and optimization result for `mult8`.**
+
+---
+
+## 2.3 Generated Netlist
+
+After synthesis, Yosys can generate a Verilog file containing the synthesized representation.
+
+For `mul2`:
+
+```bash
+write_verilog -noattr mul2_net.v
+```
+
+For `mult8`:
+
+```bash
+write_verilog -noattr mult8_net.v
+```
+
+The generated files can be opened using:
+
+```bash
+gvim mul2_net.v
+```
+
+```bash
+gvim mult8_net.v
+```
+
+### Result
+
+The synthesized Verilog netlists were generated successfully and examined to understand the optimized hardware representation.
+
+### Screenshot
+
+![Generated Netlist](mult_netlist.png)
+
+**Figure 6: Generated synthesized Verilog netlist.**
+
+---
+
+# 3. Overall Results
+
+The following results were obtained from the experiment:
+
+- Different D flip-flop coding styles were studied.
+- Asynchronous reset and synchronous reset behavior were verified using simulation.
+- The flip-flop designs were synthesized using Yosys.
+- The synthesized designs were mapped using the SKY130 standard-cell library.
+- Multiplication operations were synthesized and optimized.
+- Yosys generated optimized hardware representations from the RTL.
+- Synthesized Verilog netlists were generated and examined.
+
+---
+
+# 4. Conclusion
+
+The experiment provided practical understanding of flip-flop coding styles, synthesis, and RTL optimization. The flip-flop designs were simulated and synthesized, while arithmetic operations were optimized using Yosys. The resulting waveforms, synthesized circuits, and netlists helped in understanding the conversion of RTL code into hardware.
