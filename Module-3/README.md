@@ -54,7 +54,7 @@ The asynchronous-reset D flip-flop was successfully simulated. The waveform show
 
 ### Screenshot
 
-![Asynchronous Reset D Flip-Flop Waveform](dff_asyncres_waveform.png)
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/e4204ec1-91ac-4ad1-a0e6-c4cc7929d055" />
 
 **Figure 1: Simulation waveform of the asynchronous-reset D flip-flop.**
 
@@ -112,7 +112,7 @@ The synchronous-reset D flip-flop was successfully simulated and its waveform be
 
 ### Screenshot
 
-![Synchronous Reset D Flip-Flop Waveform](dff_syncres_waveform.png)
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/ad136a51-5a1c-450b-94f0-895d95771adc" />
 
 **Figure 2: Simulation waveform of the synchronous-reset D flip-flop.**
 
@@ -158,7 +158,7 @@ The flip-flop RTL design was successfully synthesized and mapped to cells from t
 
 ### Screenshot
 
-![Flip-Flop Synthesized Netlist](dff_netlist.png)
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/c7dd00e7-431a-4e01-9c0a-02c694824c63" />
 
 **Figure 3: Synthesized gate-level representation of the flip-flop design.**
 
@@ -222,7 +222,7 @@ The `mul2` design was synthesized successfully. Yosys optimized the multiplicati
 
 ### Screenshot
 
-![mul2 Optimization](mul2_optimization.png)
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/f4868a05-ee64-4828-ab42-1584cc58abea" />
 
 **Figure 4: Yosys synthesis and optimization result for `mul2`.**
 
@@ -278,7 +278,7 @@ The `mult8` design was synthesized and optimized successfully. The generated net
 
 ### Screenshot
 
-![mult8 Optimization](mult8_optimization.png)
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/d5b8b94c-9b93-42b3-ade8-2733a6dd7111" />
 
 **Figure 5: Yosys synthesis and optimization result for `mult8`.**
 
@@ -316,7 +316,7 @@ The synthesized Verilog netlists were generated successfully and examined to und
 
 ### Screenshot
 
-![Generated Netlist](mult_netlist.png)
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/52c4a78e-8dfe-4c3d-9887-6b1c65cb39eb" />
 
 **Figure 6: Generated synthesized Verilog netlist.**
 
