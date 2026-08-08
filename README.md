@@ -30,7 +30,7 @@ This repository documents my learning journey and hands-on experiments completed
 - Technology Mapping & Gate-Level Netlist
 - Practical Exercise, Results & Conclusion
 
-➡️ **Documentation:** [Day 1 README](02_Day_1/README.md)
+➡️ **Documentation:** [Module_1 README](02_Day_1/README.md)
 
 ---
 
