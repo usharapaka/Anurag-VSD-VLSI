@@ -96,6 +96,7 @@ RTL-Design-Workshop/
 │── Module-3/
 │   └── README.md
 
+---
 ## Author
 
  Name: Rapaka Usha  
