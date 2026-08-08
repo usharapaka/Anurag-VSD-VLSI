@@ -6,39 +6,73 @@ This repository documents my learning journey and hands-on experiments completed
 
 ## Repository Contents
 
-### 📁 01_Module-0 – Workshop Introduction
+### Module-0 – Workshop Introduction
+
 **Topics Covered:**
+
 - Introduction and Cloud Lab Instructions
 - Local Lab Installation
-  
 
 ➡️ **Documentation:** [Module 0 README](01_Module-0/README.md)
 
 ---
 
-## 02_Day_1 – Verilog RTL Design Through Simulation & Yosys Synthesis
+## Module-1 – Verilog RTL Design Through Simulation & Yosys Synthesis
 
 **Topics Covered:**
 
-* Workshop Overview
-* Digital Design & RTL Design Flow
-* Verilog Design and Testbench
-* Icarus Verilog & GTKWave
-* 2:1 Multiplexer Design
-* Yosys, Gate Libraries & RTL Synthesis
-* Technology Mapping & Gate-Level Netlist
-* Practical Exercise, Results & Conclusion
-
+- Workshop Overview
+- Digital Design & RTL Design Flow
+- Verilog Design and Testbench
+- Icarus Verilog & GTKWave
+- 2:1 Multiplexer Design
+- Yosys, Gate Libraries & RTL Synthesis
+- Technology Mapping & Gate-Level Netlist
+- Practical Exercise, Results & Conclusion
 
 ➡️ **Documentation:** [Day 1 README](02_Day_1/README.md)
 
 ---
 
+## Module-2 – RTL Design and Synthesis
+
+**Topics Covered:**
+
+- RTL Design Concepts
+- Verilog RTL Coding
+- Multiple Module Design
+- Hierarchical Design
+- RTL Simulation and Verification
+- Yosys Synthesis
+- Gate-Level Netlist
+- Technology Mapping
+
+➡️ **Documentation:** [Module 2 README](03_Module-2/README.md)
+
+---
+
+## Module-3 – Flip-Flop Coding Styles and Optimization
+
+**Topics Covered:**
+
+- Asynchronous Reset D Flip-Flop
+- Asynchronous Set D Flip-Flop
+- Synchronous Reset D Flip-Flop
+- Flip-Flop Simulation & Synthesis
+- SKY130 Technology Mapping
+- Interesting Optimization – Part 1
+
+➡️ **Documentation:** [Module 3 README](04_Module-3/README.md)
+
+---
+
 ## Tools Used
 
-- Verilog 
+- Verilog
 - Icarus Verilog (iverilog)
 - GTKWave
+- Yosys
+- SKY130 Standard-Cell Library
 - Git
 - GitHub
 
@@ -46,16 +80,21 @@ This repository documents my learning journey and hands-on experiments completed
 
 ## Repository Structure
 
-```
+```text
 RTL-Design-Workshop/
 │── README.md
-│── 01_Module-0/
+│
+│── Module-0/
 │   └── README.md
-│── 02_Day_1/
+│
+│── Module_1/
 │   └── README.md
-```
-
----
+│
+│── Module-2/
+│   └── README.md
+│
+│── Module-3/
+│   └── README.md
 
 ## Author
 
