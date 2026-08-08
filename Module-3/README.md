@@ -157,8 +157,10 @@ show
 The flip-flop RTL design was successfully synthesized and mapped to cells from the SKY130 standard-cell library. The synthesized gate-level representation was viewed using Yosys.
 
 ### Screenshot
-
+1
 <img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/c7dd00e7-431a-4e01-9c0a-02c694824c63" />
+2
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/3a9381f5-aa1c-4690-9588-d593cbf90254" />
 
 **Figure 3: Synthesized gate-level representation of the flip-flop design.**
 
