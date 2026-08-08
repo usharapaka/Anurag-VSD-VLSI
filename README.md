@@ -98,6 +98,6 @@ RTL-Design-Workshop/
 
 ## Author
 
-**Name:** Rapaka Usha  
-**College:** Anurag University  
-**Branch:** Electronics and Communication Engineering (ECE)
+ Name: Rapaka Usha  
+ College: Anurag University  
+ Branch: Electronics and Communication Engineering (ECE)
