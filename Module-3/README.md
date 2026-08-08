@@ -84,7 +84,11 @@ When `async_set` is active, `q` becomes `1`. When the set signal is inactive, th
 
 The asynchronous-set D flip-flop coding style was studied and its operation was understood.
 
----
+### Screenshot
+
+<img width="958" height="930" alt="image" src="https://github.com/user-attachments/assets/23870b33-a8ce-44a7-9b99-7da4ab27a9a6" />
+
+**Figure 2: Simulation waveform of the asynchronous-set D flip-flop.**
 
 ## 1.3 Synchronous Reset D Flip-Flop
 
@@ -114,7 +118,7 @@ The synchronous-reset D flip-flop was successfully simulated and its waveform be
 
 <img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/ad136a51-5a1c-450b-94f0-895d95771adc" />
 
-**Figure 2: Simulation waveform of the synchronous-reset D flip-flop.**
+**Figure 3: Simulation waveform of the synchronous-reset D flip-flop.**
 
 ---
 
@@ -157,12 +161,15 @@ show
 The flip-flop RTL design was successfully synthesized and mapped to cells from the SKY130 standard-cell library. The synthesized gate-level representation was viewed using Yosys.
 
 ### Screenshot
-1
+1.
+
 <img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/c7dd00e7-431a-4e01-9c0a-02c694824c63" />
-2
+
+2.
+
 <img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/3a9381f5-aa1c-4690-9588-d593cbf90254" />
 
-**Figure 3: Synthesized gate-level representation of the flip-flop design.**
+**Figure 4: Synthesized gate-level representation of the flip-flop design.**
 
 ---
 
@@ -226,7 +233,7 @@ The `mul2` design was synthesized successfully. Yosys optimized the multiplicati
 
 <img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/f4868a05-ee64-4828-ab42-1584cc58abea" />
 
-**Figure 4: Yosys synthesis and optimization result for `mul2`.**
+**Figure 5: Yosys synthesis and optimization result for `mul2`.**
 
 ---
 
@@ -282,7 +289,7 @@ The `mult8` design was synthesized and optimized successfully. The generated net
 
 <img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/d5b8b94c-9b93-42b3-ade8-2733a6dd7111" />
 
-**Figure 5: Yosys synthesis and optimization result for `mult8`.**
+**Figure 6: Yosys synthesis and optimization result for `mult8`.**
 
 ---
 
@@ -320,7 +327,7 @@ The synthesized Verilog netlists were generated successfully and examined to und
 
 <img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/52c4a78e-8dfe-4c3d-9887-6b1c65cb39eb" />
 
-**Figure 6: Generated synthesized Verilog netlist.**
+**Figure 7: Generated synthesized Verilog netlist.**
 
 ---
 
