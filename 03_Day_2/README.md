@@ -38,7 +38,8 @@ sudo apt install gedit
 gedit sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
 
-![SKY130 Timing Library](sky130PDK.png)
+<img width="952" height="1308" alt="WhatsApp Image 2026-08-08 at 6 39 34 PM" src="https://github.com/user-attachments/assets/7c7cca87-1250-445d-9984-aa4f061c01ae" />
+
 
 **Figure 1: SKY130 timing library file.**
 
@@ -54,7 +55,7 @@ The SKY130 `.lib` file was successfully opened and its library and operating-con
 
 Hierarchical synthesis preserves the module structure of the RTL design. This makes the design easier to organize, understand, and debug.
 
-![Hierarchical Synthesis](hierarchical.png)
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/8381f04c-4502-4746-a5da-d0a1653a9ad8" />
 
 **Figure 2: Hierarchical synthesized design.**
 
@@ -71,6 +72,9 @@ The Yosys command used for flattening is:
 ```text
 flatten
 ```
+## Example:
+<img width="1104" height="1160" alt="WhatsApp Image 2026-08-08 at 6 45 14 PM" src="https://github.com/user-attachments/assets/52542026-b565-44ba-8c5e-033c708faf3e" />
+
 
 ## 2.3 Comparison
 
@@ -177,7 +181,8 @@ iverilog dff_asyncres.v tb_dff_asyncres.v
 gtkwave tb_dff_asyncres.vcd
 ```
 
-![D Flip-Flop Waveform](dff_waveform.png)
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/db8f2d80-1ed7-4673-aa5b-c5a2a87f0651" />
+
 
 **Figure 3: D flip-flop simulation waveform in GTKWave.**
 
@@ -233,7 +238,8 @@ abc -liberty /address/to/your/sky130/file/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 ```
 
-![Synthesized Netlist](dff_netlist.png)
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/1985d3c9-9700-4d73-b43b-d77bba4cd549" />
+
 
 **Figure 4: Synthesized gate-level representation.**
 
